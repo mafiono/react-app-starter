@@ -59,6 +59,7 @@ class Client extends React.Component {
 
   render() {
     const { aAid, aBid } = this.state;
+	  app.use(require('prerender-node').set('prerenderToken', 'MzHcg5EHmZBjduY883Sp'));
 
     return (
       <JssProvider jss={jss} generateClassName={generateClassName}>
