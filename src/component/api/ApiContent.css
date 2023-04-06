@@ -1,0 +1,266 @@
+.apiContent .alignCenter {
+  text-align: center;
+}
+
+.apiContent .shadowedText {
+  text-shadow: 1.4px 1.4px 2px rgba(0, 0, 0, 0.7);
+}
+
+.apiContent .pointer {
+  cursor: pointer;
+}
+
+.apiContent .responsiveImage {
+  line-height: 0;
+}
+
+.apiContent .responsiveImage > img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.apiContent .bannerContainer {
+  position: relative;
+}
+
+.apiContent .bannerContainer > .bgMobile,
+.apiContent .bannerContainer > .bgDesktop {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .apiContent .bannerContainer {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 450px;
+  }
+
+  .apiContent .bannerContainer > .bgMobile {
+    display: none;
+  }
+
+  .apiContent .bannerContainer > .bgDesktop {
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+  }
+
+  .apiContent .bannerContainer > .contentWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .apiContent .bannerContainer > .contentWrapper > .content {
+    width: 540px;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 599.95px) {
+  .apiContent .bannerContainer.mobilePadding60 > .contentWrapper {
+    padding-top: 60%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding65 > .contentWrapper {
+    padding-top: 65%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding70 > .contentWrapper {
+    padding-top: 70%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding75 > .contentWrapper {
+    padding-top: 75%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding80 > .contentWrapper {
+    padding-top: 80%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding85 > .contentWrapper {
+    padding-top: 85%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding90 > .contentWrapper {
+    padding-top: 90%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding95 > .contentWrapper {
+    padding-top: 95%;
+  }
+
+  .apiContent .bannerContainer.mobilePadding100 > .contentWrapper {
+    padding-top: 100%;
+  }
+
+  .apiContent .bannerContainer > .bgDesktop {
+    display: none;
+  }
+
+  .apiContent .bannerContainer > .bgMobile {
+    padding-top: 114.1666%;
+    position: absolute;
+  }
+
+  .apiContent .bannerContainer > .bgMobile > img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+/* Button */
+.apiContent .button {
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  outline: none;
+  position: relative;
+  user-select: none;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  -moz-appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1.3333333333333333rem;
+  min-width: 64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  min-height: 36px;
+  box-sizing: border-box;
+  line-height: 1.4em;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.apiContent .button::-moz-focus-inner {
+  border-style: none;
+}
+
+.apiContent .button.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apiContent .button:hover {
+  text-decoration: none;
+  background-color: rgba(227, 227, 227, 0.1);
+}
+
+@media (hover: none) {
+  .apiContent .button:hover {
+    background-color: transparent;
+  }
+}
+
+.apiContent .button.primary {
+  color: #b39053;
+}
+.apiContent .button.primary:hover {
+  background-color: rgba(179, 144, 83, 0.1);
+}
+@media (hover: none) {
+  .apiContent .button.primary:hover {
+    background-color: transparent;
+  }
+}
+.apiContent .button.secondary {
+  color: #2b3742;
+}
+.apiContent .button.secondary:hover {
+  background-color: rgba(43, 55, 66, 0.1);
+}
+@media (hover: none) {
+  .apiContent .button.secondary:hover {
+    background-color: transparent;
+  }
+}
+
+.apiContent .button.contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-color: #e0e0e0;
+}
+
+.apiContent .button.contained:hover {
+  background-color: #d5d5d5;
+}
+
+@media (hover: none) {
+  .apiContent .button.contained:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.apiContent .button.contained.primary {
+  color: #fff;
+  background-color: #b39053;
+}
+
+.apiContent .button.contained.primary:hover {
+  background-color: #816328;
+}
+
+@media (hover: none) {
+  .apiContent .button.contained.primary:hover {
+    background-color: #b39053;
+  }
+}
+
+.apiContent .button.contained.secondary {
+  color: #fff;
+  background-color: #2b3742;
+}
+
+.apiContent .button.contained.secondary:hover {
+  background-color: #02111b;
+}
+
+@media (hover: none) {
+  .apiContent .button.contained.secondary:hover {
+    background-color: #2b3742;
+  }
+}
+
+.apiContent .button.sizeSmall {
+  padding: 7px 8px;
+  min-width: 64px;
+  font-size: 1.238095238095238rem;
+  min-height: 32px;
+}
+
+.apiContent .button.sizeLarge {
+  padding: 8px 24px;
+  min-width: 112px;
+  font-size: 1.4285714285714284rem;
+  min-height: 40px;
+}
+
+.apiContent .button.fullWidth {
+  width: 100%;
+}
+
+.apiContent a,
+.apiContent a:visited {
+  color: inherit;
+  text-decoration: underline;
+}

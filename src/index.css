@@ -1,0 +1,24 @@
+html {
+  font-size: 12px;
+}
+
+#root {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+select > option {
+  color: #333;
+}
+
+a.standard,
+a.standard:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a.no-underline,
+a.no-underline:visited {
+  text-decoration: none;
+}
