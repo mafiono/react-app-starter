@@ -5,7 +5,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import deepmerge from "deepmerge";
 
-import { List, Editor } from "./pevo";
+import { List, Editor } from "./pevo/";
 import { IconButton } from "./ui";
 
 class Pevo extends React.PureComponent {

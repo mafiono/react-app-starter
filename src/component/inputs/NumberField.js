@@ -1,5 +1,5 @@
 import React from "react";
-import NumberFormat from "react-number-format";
+import { NumberFormatBase } from "react-number-format";
 import { TextField } from "@material-ui/core";
 
 import ControlledField from "./ControlledField";
@@ -8,7 +8,7 @@ function NumberFormatCustom(props) {
   const { inputRef, onChange, ...other } = props;
 
   return (
-    <NumberFormat
+    <NumberFormatBase
       {...other}
       getInputRef={inputRef}
       onValueChange={(values) => {

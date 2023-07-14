@@ -8,7 +8,7 @@ import {
   Button,
 } from "@material-ui/core";
 import styled from "styled-components/macro";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import { apiFetch, DataValidator } from "../../util";
 import { subscribeTo, PlayerContainer } from "../../state";

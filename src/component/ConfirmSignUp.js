@@ -41,7 +41,7 @@ function ConfirmSignUp({ player, token, appState, history }) {
       .catch((error) => {
         handleResponse(error.response);
       });
-  }, [playerLoggedIn, token]);
+  }, [handleResponse, playerLoggedIn, token]);
 
   const startedLoggedIn = useRef(playerLoggedIn);
 
@@ -49,7 +49,7 @@ function ConfirmSignUp({ player, token, appState, history }) {
     if (!startedLoggedIn.current && playerLoggedIn) {
       history.push("/");
     }
-  }, [playerLoggedIn]);
+  }, [history, playerLoggedIn]);
 
   return (
     <MaxWidth>

@@ -3,13 +3,7 @@ import styled from "styled-components/macro";
 import { Route, Switch } from "react-router-dom";
 import { Tabs, Tab } from "@material-ui/core";
 
-import {
-  Settings,
-  TransactionLog,
-  GameLog,
-  Restrictions,
-  BonusHistory,
-} from "./Profile/";
+import { Settings, TransactionLog, GameLog, Restrictions, BonusHistory } from "./Profile/";
 import { isAuthorized } from "../component/hoc";
 import { ScrollTopOnMount } from "../component";
 

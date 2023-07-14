@@ -5,7 +5,7 @@ import { Typography, IconButton } from "@material-ui/core";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 //import { ApiContent } from "..";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 //import { DetailsImageContainer, Actions, ClearFix } from ".";
 import { MaxWidth } from "../../styled";
 import {Actions, ClearFix, DetailsImageContainer} from "./common";

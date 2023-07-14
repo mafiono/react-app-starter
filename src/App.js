@@ -7,7 +7,7 @@ import deepmerge from "deepmerge";
 import { Provider, Subscribe } from "unstated";
 import DateFnsUtils from "@date-io/date-fns";
 import MuiPickersUtilsProvider from "material-ui-pickers/MuiPickersUtilsProvider";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import GoogleFontLoader from "react-google-font-loader";
 
 import {

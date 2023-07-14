@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Typography } from "@material-ui/core";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import { ApiContent } from ".";
 import { LoadingIndicator, ScrollTopOnMount, NotFound } from "..";

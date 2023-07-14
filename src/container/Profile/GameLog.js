@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 //import { GameLog as GameLogComponent } from "../../component/profile";
 import { VerticalPadder } from "../../component/styled";

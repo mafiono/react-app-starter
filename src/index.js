@@ -4,12 +4,7 @@ import ReactDOM from "react-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { JssProvider } from "react-jss";
 import { create } from "jss";
-import {
-  createGenerateClassName,
-  jssPreset,
-  MuiThemeProvider,
-  createMuiTheme,
-} from "@material-ui/core/styles";
+import { createGenerateClassName, jssPreset, MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import deepmerge from "deepmerge";
 import qs from "query-string";
 
@@ -24,7 +19,7 @@ const jss = create({
   insertionPoint: document.getElementById("jss-insertion-point"),
 });
 
-const defaultMuiTheme = createMuiTheme(
+const defaultMuiTheme = createTheme(
   deepmerge(defaultMuiThemeColors, muiThemeCommon)
 );
 
@@ -77,16 +72,20 @@ class Client extends React.Component {
   }
 }
 
+
 //*
 
-const rootEl = document.getElementById("root");
+const rootEl = document.getElementById('root');
 
-
+/*
 if (muiServerCssEl !== null) {
 	console.log('React.hydrate()');
 	ReactDOM.hydrate(<Client />, rootEl);
 } else {
 	console.log('React.render()');
-
-ReactDOM.render(<Client />, rootEl);
+//*/
+	ReactDOM.render(<Client />, rootEl);
+/*
 }
+
+//*/

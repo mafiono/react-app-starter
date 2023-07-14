@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button, TextField, Grid, Typography, Paper } from "@material-ui/core";
 import styled from "styled-components/macro";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import { Form, ScrollTopOnMount } from "../../component";
 import { apiFetch, DataValidator, canonicalize } from "../../util";

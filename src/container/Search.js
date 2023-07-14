@@ -1,7 +1,7 @@
 import React from "react";
 import qs from "query-string";
 import { Typography } from "@material-ui/core";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import { MaxWidth, VerticalPadder } from "../component/styled";
 import { ScrollTopOnMount, Search as SearchComponent } from "../component";

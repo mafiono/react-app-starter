@@ -7,7 +7,7 @@ export let PaymentModule;
 
 
 const LoadableComponent = Loadable({
-  loader: () => import("./payment"),
+  loader: () => import("react-loadable"),
   loading: LoadingIndicator,
 });
 

@@ -8,7 +8,7 @@ import {
   ExpansionPanelDetails,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import { LoadingIndicator } from "../";
 import { ApiContent } from "./";

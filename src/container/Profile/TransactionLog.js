@@ -1,6 +1,6 @@
 import React from "react";
 import { Paper, Typography, Button, Grid } from "@material-ui/core";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import TransactionHistory from "../../component/profile/TransactionHistory";
 import {

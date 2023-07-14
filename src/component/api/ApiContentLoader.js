@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Typography } from "@material-ui/core";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import { ApiContent } from ".";
 import { LoadingIndicator } from "../";

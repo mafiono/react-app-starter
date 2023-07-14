@@ -22,7 +22,7 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import SearchIcon from "@material-ui/icons/Search";
 
 import { logo } from "../img";
-import { ResponsiveMenu, Balance } from "./header";
+import { ResponsiveMenu, Balance } from "./header/";
 import { subscribeTo, PlayerContainer, AppStateContainer } from "../state";
 import { VerticalPadder } from "./styled";
 import { IconButton, Avatar } from "../component/ui";

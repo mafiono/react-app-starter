@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Popover } from "@material-ui/core";
 import { SketchPicker } from "react-color";
-import { default as colorHelpers } from "react-color/lib/helpers/color";
+import  colorHelpers from "react-color";
 import styled from "styled-components/macro";
 
 import checkered_pattern from "../../../img/tmp/checkered_pattern.svg";

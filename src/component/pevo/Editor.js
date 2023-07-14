@@ -7,7 +7,7 @@ import ThreeSixtyIcon from "@material-ui/icons/ThreeSixty";
 
 import { IconButton } from "../ui";
 import { searchForColor } from "../../theme";
-import { Color } from "./editor";
+import Color from "./editor/Color";
 
 class Editor extends React.PureComponent {
   state = {

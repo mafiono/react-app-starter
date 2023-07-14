@@ -1,4 +1,4 @@
-import * as Cookies from "js-cookie";
+import Cookies from "js-cookie";
 import md5 from "md5";
 
 import { BaseContainer } from ".";

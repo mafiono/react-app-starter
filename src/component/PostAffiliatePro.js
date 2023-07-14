@@ -68,7 +68,7 @@ function PostAffiliatePro({ appState }) {
     return () => {
       clearInterval(trackingInitInterval);
     };
-  }, [aAid, aBid]);
+  }, [aAid, aBid, papConfig.campaign_id]);
 
   if (!aAid || !aBid || !papConfig.campaign_id) {
     return null;

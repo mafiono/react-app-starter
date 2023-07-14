@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 //import { BonusHistory as BonusHistoryComponent } from "../../component/profile";
 import { VerticalPadder } from "../../component/styled";
