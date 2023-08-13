@@ -1,5 +1,5 @@
 import BaseModel from "./BaseModel";
-import { BonusMeta } from ".";
+import { default as BonusMeta } from "./BonusMeta";
 
 class BonusHistory extends BaseModel {
   static getBonusMeta(data) {

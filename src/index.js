@@ -15,64 +15,61 @@ import { isMobileBrowser } from "./util";
 
 const generateClassName = createGenerateClassName();
 const jss = create({
-  ...jssPreset(),
-  insertionPoint: document.getElementById("jss-insertion-point"),
+	...jssPreset(),
+	insertionPoint: document.getElementById('jss-insertion-point'),
 });
 
-const defaultMuiTheme = createTheme(
-  deepmerge(defaultMuiThemeColors, muiThemeCommon)
-);
+const defaultMuiTheme = createTheme(deepmerge(
+	defaultMuiThemeColors,
+	muiThemeCommon
+));
 
 const isMobile = isMobileBrowser();
-const muiServerCssEl = document.getElementById("jss-css");
+const muiServerCssEl = document.getElementById('jss-css');
+
 
 class Client extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      aAid: null,
-      aBid: null,
-    };
+	constructor(props) {
+		super(props);
 
-    const searchQuery = qs.parse(window.location.search);
+		this.state = {
+			aAid: null,
+			aBid: null
+		};
 
-    if (searchQuery.a_aid) {
-      this.state.aAid = searchQuery.a_aid;
+		const searchQuery = qs.parse(window.location.search);
 
-      if (searchQuery.a_bid) {
-        this.state.aBid = searchQuery.a_bid;
-      }
-    }
-  }
+		if (searchQuery.a_aid) {
+			this.state.aAid = searchQuery.a_aid;
 
-  componentDidMount() {
-    if (muiServerCssEl && muiServerCssEl.parentNode) {
-      muiServerCssEl.parentNode.removeChild(muiServerCssEl);
-    }
-  }
+			if (searchQuery.a_bid) {
+				this.state.aBid = searchQuery.a_bid;
+			}
+		}
+	}
 
-  render() {
-    const { aAid, aBid } = this.state;
-	  app.use(require('prerender-node').set('prerenderToken', 'MzHcg5EHmZBjduY883Sp'));
+	componentDidMount() {
+		if (muiServerCssEl && muiServerCssEl.parentNode) {
+			muiServerCssEl.parentNode.removeChild(muiServerCssEl);
+		}
+	}
 
-    return (
-      <JssProvider jss={jss} generateClassName={generateClassName}>
-        <MuiThemeProvider theme={defaultMuiTheme}>
-          <HelmetProvider>
-            <App
-              muiTheme={defaultMuiTheme}
-              isMobile={isMobile}
-              aAid={aAid}
-              aBid={aBid}
-            />
-          </HelmetProvider>
-        </MuiThemeProvider>
-      </JssProvider>
-    );
-  }
+	render() {
+		const { aAid, aBid } = this.state;
+
+		return (
+			<JssProvider jss={jss} generateClassName={generateClassName}>
+				<MuiThemeProvider theme={defaultMuiTheme}>
+					<HelmetProvider>
+						<App muiTheme={defaultMuiTheme} isMobile={isMobile} aAid={aAid} aBid={aBid} />
+					</HelmetProvider>
+				</MuiThemeProvider>
+			</JssProvider>
+		);
+	}
+
 }
-
 
 //*
 

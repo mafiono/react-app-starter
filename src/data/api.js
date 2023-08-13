@@ -1262,8 +1262,8 @@ export const countries = [
 
 export const currencies = [
   {
-    value: "",
-    label: "",
+    value: "AUD",
+    label: "AUS Dollar",
   },
   {
     value: "EUR",
