@@ -1,17 +1,20 @@
-import "react-app-polyfill/ie11";
-import React from "react";
-import ReactDOM from "react-dom";
-import { HelmetProvider } from "react-helmet-async";
-import { JssProvider } from "react-jss";
-import { create } from "jss";
-import { createGenerateClassName, jssPreset, MuiThemeProvider, createTheme } from "@material-ui/core/styles";
-import deepmerge from "deepmerge";
-import qs from "query-string";
+import 'react-app-polyfill/ie11';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import { JssProvider } from 'react-jss';
+import { create } from 'jss';
+import {
+	createGenerateClassName, jssPreset, MuiThemeProvider, createTheme
+} from '@material-ui/core/styles';
+import deepmerge from 'deepmerge';
+import qs from 'query-string';
 
-import { muiThemeCommon, defaultMuiThemeColors } from "./theme";
-import "./index.css";
-import App from "./App";
-import { isMobileBrowser } from "./util";
+import { muiThemeCommon, defaultMuiThemeColors } from './theme';
+import './index.css';
+import App from './App';
+import { isMobileBrowser } from './util';
+
 
 const generateClassName = createGenerateClassName();
 const jss = create({

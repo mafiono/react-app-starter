@@ -1,12 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-//import { Restrictions as RestrictionsComponent } from "../../component/profile/Restrictions";
+import { Restrictions as RestrictionsComponent } from "../../component/profile/Restrictions";
 import { VerticalPadder } from "../../component/styled";
 
-function RestrictionsComponent() {
+/** function RestrictionsComponent() {
     return null;
-}
+} */
 
 function Restrictions() {
   return (

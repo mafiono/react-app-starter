@@ -259,8 +259,8 @@ export const casinoProviderKeys = Object.keys(providerDefinitions)
 
 export const countries = [
   {
-    value: "",
-    label: "",
+    value: "au",
+    label: "australia",
   },
   {
     value: "af",

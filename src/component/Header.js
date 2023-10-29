@@ -1,21 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
-import {
-  ButtonBase,
-  Button,
-  Hidden,
-  Typography,
-  Popper,
-  Fade,
-  Paper,
-  ClickAwayListener,
-  MenuList,
-  MenuItem,
-  ListItemIcon,
-  ListItemText,
-  Divider,
-} from "@material-ui/core";
+import { ButtonBase, Button, Hidden, Typography, Popper, Fade, Paper, ClickAwayListener, MenuList, MenuItem, ListItemIcon, ListItemText, Divider } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
